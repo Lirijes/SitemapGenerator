@@ -1,4 +1,33 @@
-﻿@{
+﻿@model UrlViewModel
+@{
     ViewData["Title"] = "Home";
 }
 
+<form asp-action="GenerateXML" method="post" id="xmlForm">
+    <div class="form-group">
+        <label>Please enter your website Url</label>
+        <input asp-for="Url" type="text" class="form-control" id="url" name="Url" value="@Model.Url" required />
+    </div>
+    <div class="form-check">
+        <label asp-for="GenerateHtmlData" class="form-check-label" for="generateHtmlData"></label>
+        <input asp-for="GenerateHtmlData" class="form-check-input" type="checkbox" name="GenerateHtmlData" id="generateHtmlData" value="true">
+    </div>
+    <input type="hidden" name="actionType" value="view" />
+    <button type="submit" class="btn btn-primary" onclick="setAction('view')">Generate XML</button>
+    <button type="button" class="btn btn-secondary" onclick="setAction('download')">Download XML</button>
+</form>
+
+<script>
+    function setAction(type) {
+        var form = document.getElementById('xmlForm');
+        var actionType = document.querySelector('input[name="actionType"]');
+        if (type === 'view') {
+            form.target = '_blank';
+            actionType.value = 'view';
+        } else if (type === 'download') {
+            form.target = '_self';
+            actionType.value = 'download';
+        }
+        form.submit();
+    }
+</script>
