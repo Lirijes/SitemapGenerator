@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitemapGenerator", "SitemapGenerator\SitemapGenerator.csproj", "{8B32637D-0899-4DDE-AA05-1259171DDEA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SitemapGenerator", "SitemapGenerator.csproj", "{296F4397-2F02-4696-8768-07CCACE37571}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8B32637D-0899-4DDE-AA05-1259171DDEA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8B32637D-0899-4DDE-AA05-1259171DDEA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8B32637D-0899-4DDE-AA05-1259171DDEA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8B32637D-0899-4DDE-AA05-1259171DDEA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{296F4397-2F02-4696-8768-07CCACE37571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{296F4397-2F02-4696-8768-07CCACE37571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{296F4397-2F02-4696-8768-07CCACE37571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{296F4397-2F02-4696-8768-07CCACE37571}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {70557AB4-3C45-4A3B-930D-FEB3EAA8AAD2}
+		SolutionGuid = {E5B912D7-30D7-4951-A4F6-8DF6456DDE5E}
 	EndGlobalSection
 EndGlobal
