@@ -1,0 +1,14 @@
+﻿.header {
+  padding: 10px;
+  border-bottom: 1px solid rebeccapurple;
+}
+.header-logo {
+  font-weight: bold;
+  color: rebeccapurple;
+}
+.header-info {
+  font-size: 18px;
+  font-style: italic;
+  color: rebeccapurple;
+  margin-left: 20px;
+}

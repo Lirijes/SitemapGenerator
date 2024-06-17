@@ -3,18 +3,18 @@
     ViewData["Title"] = "Home";
 }
 
-<form asp-action="GenerateXML" method="post" id="xmlForm">
+<form class="form-container" asp-action="GenerateXML" method="post" id="xmlForm">
     <div class="form-group">
-        <label>Please enter your website Url</label>
-        <input asp-for="Url" type="text" class="form-control" id="url" name="Url" value="@Model.Url" required />
+        <label class="form-group-label">Please enter your website Url:</label>
+        <input asp-for="Url" type="text" class="form-group-input" id="url" name="Url" value="@Model.Url" required placeholder="ex. https://portfolio-9k5o.onrender.com/" />
     </div>
     <div class="form-check">
         <label asp-for="GenerateHtmlData" class="form-check-label" for="generateHtmlData"></label>
         <input asp-for="GenerateHtmlData" class="form-check-input" type="checkbox" name="GenerateHtmlData" id="generateHtmlData" value="true">
     </div>
     <input type="hidden" name="actionType" value="view" />
-    <button type="submit" class="btn btn-primary" onclick="setAction('view')">Generate XML</button>
-    <button type="button" class="btn btn-secondary" onclick="setAction('download')">Download XML</button>
+    <button type="submit" class="btn btn-primary form-btn" onclick="setAction('view')">Generate XML</button>
+    <button type="button" class="btn btn-secondary form-btn" onclick="setAction('download')">Download XML</button>
 </form>
 
 <script>

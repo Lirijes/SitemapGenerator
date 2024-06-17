@@ -1,0 +1,25 @@
+{
+  "name": "sitemapgenerator",
+  "version": "1.0.0",
+  "main": "browsersync.js",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o wwwroot/css wwwroot/scss",
+    "watch-scss": "nodemon -e scss -x \"npm run scss\"",
+    "start": "concurrently \"npm run watch-scss\" \"node start-browser-sync.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "browser-sync": "^3.0.2",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "concurrently": "^8.2.2",
+    "eslint-plugin-vue": "^9.26.0",
+    "globals": "^15.6.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.1.3",
+    "typescript-eslint": "^7.13.0"
+  }
+}

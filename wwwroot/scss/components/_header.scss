@@ -1,2 +1,16 @@
-﻿body {
+﻿.header {
+    padding: 10px;
+    border-bottom: 1px solid rebeccapurple;
+
+    &-logo {
+        font-weight: bold;
+        color: rebeccapurple;
+    }
+
+    &-info {
+        font-size: 18px;
+        font-style: italic;
+        color: rebeccapurple;
+        margin-left: 20px;
+    }
 }
