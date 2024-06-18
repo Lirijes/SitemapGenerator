@@ -7,6 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews(); 
 
 var app = builder.Build();
+
+// Configure the URL and port to listen on
+app.Urls.Add("http://*:80");
+
 app.UseHsts();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
