@@ -3,10 +3,22 @@
 @import 'core/mixins.scss';
 
 @import 'components/header.scss';
+@import 'components/footer.scss';
 @import 'home/home.scss';
 
 
 html, body {
     font-family: $font-playfair;
     font-size: 16px;
+    height: 100vh;
+}
+
+a {
+    color: rebeccapurple;
+    text-decoration: none;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        color: mediumpurple;
+    }
 }

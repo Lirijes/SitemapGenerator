@@ -36,7 +36,7 @@ namespace SitemapGenerator.Controllers
                     FileName = "generated.xml",
                     Inline = false,  // Force download
                 };
-                Response.Headers.Add("Content-Disposition", contentDisposition.ToString());
+                Response.Headers.Append("Content-Disposition", contentDisposition.ToString());
                 return Content(xmlData, "text/xml", System.Text.Encoding.UTF8);
             }
             else
@@ -103,10 +103,10 @@ namespace SitemapGenerator.Controllers
                     XNamespace xsi = "http://www.w3.org/2001/XMLSchema-instance";
                     XDocument xmlDoc = new XDocument(
                         new XElement(xmlns + "urlset",
-                    new XAttribute(XNamespace.Xmlns + "xsi", xsi),
-                    new XAttribute(xsi + "schemaLocation", "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd")
-                )
-            );
+                            new XAttribute(XNamespace.Xmlns + "xsi", xsi),
+                            new XAttribute(xsi + "schemaLocation", "http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd")
+                        )
+                    );
 
                     var links = htmlDoc.DocumentNode.SelectNodes("//a[@href]");
                     if (links != null)

@@ -1,0 +1,14 @@
+﻿.footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+
+    &-sample {
+        font-family: $font-roboto;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
